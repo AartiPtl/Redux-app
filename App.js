@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, Button, ScrollView } from 'react-native';
+import {image, StyleSheet, View, ScrollView } from 'react-native';
 import Header from './components/Header';
 import Product from './components/Product';
 
@@ -10,7 +10,7 @@ const App = () => {
       name: 'Samsung Mobile',
       color: 'white',
       price: 30000,
-      image: require('../FirstSS/source/images/mblink.spng'),
+      Image: require('../FirstSS/source/images/mblink.spng'),
     },
     {
       name: 'Apple Mobile',
