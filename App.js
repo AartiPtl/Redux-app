@@ -1,5 +1,4 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image, Button, ScrollView } from 'react-native';
 import Header from './components/Header';
 import Product from './components/Product';
@@ -11,33 +10,30 @@ const App = () => {
       name: 'Samsung Mobile',
       color: 'white',
       price: 30000,
-      Image: '../assets/samsung.png',
+      image: require('../FirstSS/source/images/mblink.spng'),
     },
     {
       name: 'Apple Mobile',
       color: 'grey',
       price: 60000,
-      Image: '../assets/Apple.png',
+      image: require('../FirstSS/source/images/Apple.png'),
     },
     {
       name: 'Google Mobile',
       color: 'black',
       price: 80000,
-      Image: '../assets/Google.png',
+      image: require('../FirstSS/source/images/mblink.png'),
 
     }
   ]
-
   return (
     <View >
       <Header />
-
       <ScrollView>
         {
           Products.map((item) =><Product item={item} />)
         }
       </ScrollView>
-      {/* <Product /> */}
     </View>
   );
 };
